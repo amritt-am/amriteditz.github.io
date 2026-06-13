@@ -1,20 +1,205 @@
-Create a modern blue-themed portfolio website for an aspiring AI/ML engineer named Amrit.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amrit Editz | AI/ML Portfolio</title>
 
-Sections:
-- Hero section with profile image, name, and tagline "Future AI/ML Engineer"
-- About Me
-- Skills (Python, AI, Machine Learning, HTML, CSS, GitHub)
-- Projects section with project cards
-- Education section
-- Contact section
-- Social media links
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
-Design:
-- Professional blue gradient theme
-- Glassmorphism effects
-- Responsive for mobile and desktop
-- Smooth animations
-- Dark mode
-- Use only HTML, CSS and JavaScript in a single index.html file
+body{
+background:#0a0f1f;
+color:white;
+scroll-behavior:smooth;
+}
 
-Output complete production-ready code.
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+}
+
+header h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+header p{
+font-size:1.3rem;
+opacity:.9;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:white;
+color:#2563eb;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+color:#60a5fa;
+}
+
+.about,.education{
+max-width:800px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#111827;
+padding:20px;
+text-align:center;
+border-radius:15px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111827;
+padding:20px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+}
+
+span{
+color:#60a5fa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Amrit Editz</h1>
+<p>Future AI/ML Engineer 🚀</p>
+<a href="#about" class="btn">Explore Portfolio</a>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="about">
+<p>
+Hello! I'm <span>Amrit Editz</span>, an aspiring AI/ML Engineer and future BTech CSE student.
+I am passionate about Artificial Intelligence, Machine Learning, technology, and creating digital projects.
+My goal is to build innovative AI solutions and become a successful AI Engineer.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill">Python</div>
+<div class="skill">AI</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">GitHub</div>
+<div class="skill">Creative Editing</div>
+</div>
+</section>
+
+<section>
+<h2>Projects</h2>
+<div class="projects">
+
+<div class="card">
+<h3>AI Chatbot</h3>
+<p>AI-powered chatbot project using modern technologies.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Professional personal portfolio hosted on GitHub Pages.</p>
+</div>
+
+<div class="card">
+<h3>Machine Learning Projects</h3>
+<p>Future ML projects and experiments.</p>
+</div>
+
+<div class="card">
+<h3>Creative Editing</h3>
+<p>Video editing and creative digital content creation.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Education</h2>
+<div class="education">
+<p>12th Completed</p>
+<p>Future BTech CSE Student</p>
+<p>Focused on AI & Machine Learning</p>
+</div>
+</section>
+
+<section>
+<h2>Contact</h2>
+<div class="contact">
+<p>Email: your@email.com</p>
+<p>GitHub: github.com/amritt-am</p>
+<p>Instagram: @amriteditz</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Amrit Editz | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
