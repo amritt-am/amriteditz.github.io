@@ -3,203 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amrit Editz | AI/ML Portfolio</title>
+<title>Amrit Editz | AI/ML Engineer</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-background:#0a0f1f;
-color:white;
-scroll-behavior:smooth;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
-}
-
-header h1{
-font-size:4rem;
-margin-bottom:10px;
-}
-
-header p{
-font-size:1.3rem;
-opacity:.9;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:white;
-color:#2563eb;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-transform:scale(1.08);
-}
-
-section{
-padding:80px 10%;
-}
-
-h2{
-text-align:center;
-margin-bottom:40px;
-font-size:2rem;
-color:#60a5fa;
-}
-
-.about,.education{
-max-width:800px;
-margin:auto;
-text-align:center;
-line-height:1.8;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-}
-
-.skill{
-background:#111827;
-padding:20px;
-text-align:center;
-border-radius:15px;
-}
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#111827;
-padding:20px;
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.contact{
-text-align:center;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#111827;
-}
-
-span{
-color:#60a5fa;
-}
-</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<header>
-<h1>Amrit Editz</h1>
-<p>Future AI/ML Engineer 🚀</p>
-<a href="#about" class="btn">Explore Portfolio</a>
-</header>
+<div class="cursor"></div>
+
+<nav>
+<div class="logo">Amrit Editz</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<h1>Hi, I'm <span>Amrit Editz</span></h1>
+
+<h2><span id="typing"></span></h2>
+
+<p>
+Future AI/ML Engineer passionate about
+Artificial Intelligence, Machine Learning,
+and building innovative technology.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+</section>
 
 <section id="about">
+
 <h2>About Me</h2>
-<div class="about">
+
+<div class="glass-card">
+
 <p>
-Hello! I'm <span>Amrit Editz</span>, an aspiring AI/ML Engineer and future BTech CSE student.
-I am passionate about Artificial Intelligence, Machine Learning, technology, and creating digital projects.
-My goal is to build innovative AI solutions and become a successful AI Engineer.
+I'm an aspiring AI/ML Engineer and future BTech CSE student.
+I love creating websites, exploring AI technology,
+and building digital products.
 </p>
+
 </div>
+
 </section>
 
-<section>
+<section id="skills">
+
 <h2>Skills</h2>
-<div class="skills">
-<div class="skill">Python</div>
-<div class="skill">AI</div>
-<div class="skill">Machine Learning</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">GitHub</div>
-<div class="skill">Creative Editing</div>
+
+<div class="skills-grid">
+
+<div class="skill-card">Python</div>
+<div class="skill-card">AI</div>
+<div class="skill-card">Machine Learning</div>
+<div class="skill-card">HTML</div>
+<div class="skill-card">CSS</div>
+<div class="skill-card">JavaScript</div>
+<div class="skill-card">GitHub</div>
+<div class="skill-card">Creative Editing</div>
+
 </div>
+
 </section>
 
-<section>
+<section id="projects">
+
 <h2>Projects</h2>
-<div class="projects">
 
-<div class="card">
+<div class="project-grid">
+
+<div class="project-card">
 <h3>AI Chatbot</h3>
-<p>AI-powered chatbot project using modern technologies.</p>
+<p>Future AI chatbot project.</p>
 </div>
 
-<div class="card">
+<div class="project-card">
 <h3>Portfolio Website</h3>
-<p>Professional personal portfolio hosted on GitHub Pages.</p>
+<p>Personal professional portfolio.</p>
 </div>
 
-<div class="card">
-<h3>Machine Learning Projects</h3>
-<p>Future ML projects and experiments.</p>
-</div>
-
-<div class="card">
-<h3>Creative Editing</h3>
-<p>Video editing and creative digital content creation.</p>
+<div class="project-card">
+<h3>ML Projects</h3>
+<p>Machine Learning experiments.</p>
 </div>
 
 </div>
+
 </section>
 
-<section>
-<h2>Education</h2>
-<div class="education">
-<p>12th Completed</p>
-<p>Future BTech CSE Student</p>
-<p>Focused on AI & Machine Learning</p>
-</div>
-</section>
+<section id="contact">
 
-<section>
 <h2>Contact</h2>
-<div class="contact">
+
+<div class="glass-card">
+
 <p>Email: your@email.com</p>
-<p>GitHub: github.com/amritt-am</p>
 <p>Instagram: @amriteditz</p>
+<p>GitHub: github.com/amritt-am</p>
+
 </div>
+
 </section>
 
 <footer>
-<p>© 2026 Amrit Editz | All Rights Reserved</p>
+<p>© 2026 Amrit Editz</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
